@@ -1,8 +1,12 @@
 module.exports = {
-  purge: [
-    './public/*.html',
-    './public/*.php'
-  ],
+  purge: {
+    enabled:false ,
+    content:['./public/*.html',
+    './public/*.php',
+    './src/styles.css'
+    ]
+  },
+    
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

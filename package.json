@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "tailwindcss build ./src/styles.css -o ./public/styles.css",
-    "prod": "NODE_ENV=production tailwindcss build ./src/styles.css -o ./public/styles.css"
+    "prod": "NODE_ENV=production tailwindcss build ./src/styles.css -o ./public/styles.css",
+    "onchange":"onchange './src/*.css' -- npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.2.3",
+    "onchange": "^7.1.0",
     "tailwindcss": "^2.0.2"
   }
 }

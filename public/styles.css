@@ -584,7 +584,7 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #4f46e5;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(79, 70, 229, 0));
-  --tw-gradient-to: #a7f3d0;
+  --tw-gradient-to: #7c3aed;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
