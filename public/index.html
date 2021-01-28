@@ -14,7 +14,7 @@
     </head>
     <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
         <!--Nav-->
-        <nav id="header" class="fixed top-0 z-30 w-full text-white ">
+        <nav id="header" class="fixed top-0 z-30 w-full ">
           <div class="container flex flex-wrap items-center justify-between w-full py-2 mx-auto mt-0">
             <div class="flex items-center pl-4">
               <a class="text-2xl font-bold text-white no-underline toggleColour hover:no-underline lg:text-4xl" href="#">
@@ -37,23 +37,36 @@
                 </svg>
               </button>
             </div>
-            <div class="z-20 flex-grow hidden w-full p-4 mt-2 text-black bg-white lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0" id="nav-content">
-              <ul class="items-center justify-end flex-1 list-reset lg:flex">
+            <div class="z-20 flex-grow hidden w-full p-4 mt-2 text-white bg-white lg:flex lg:items-center lg:w-auto lg:mt-0 lg:bg-transparent lg:p-0 toggleColour" id="nav-content">
+              <ul class="items-center justify-end flex-1 divide-y-2 divide-indigo-700 list-reset lg:flex ">
                 <li class="mr-3">
-                  <a class="inline-block px-4 py-2 font-bold text-black no-underline" href="#">Active</a>
+                  <a class="flex items-center justify-center px-4 py-2 font-bold no-underline hover:bg-gray-200 rounded-xl hover:text-black hover:bg-opacity-60 toggleColour " href="#">
+                      <svg class="w-8 h-8 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2-4l-2 -4h3l2 2h4l-2 -7h3z" /></svg>
+                      Air Travel
+                    </a>
                 </li>
                 <li class="mr-3">
-                  <a class="inline-block px-4 py-2 text-black no-underline hover:text-gray-800 hover:text-underline" href="#">link</a>
-                </li>
-                <li class="mr-3">
-                  <a class="inline-block px-4 py-2 text-black no-underline hover:text-gray-800 hover:text-underline" href="#">link</a>
-                </li>
+                    <a class="flex items-center justify-center px-4 py-2 font-bold no-underline hover:bg-gray-200 rounded-xl hover:text-black hover:bg-opacity-60 toggleColour" href="#">
+                        <svg class="w-8 h-8 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="7" cy="17" r="2" />  <circle cx="17" cy="17" r="2" />  <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" /></svg>
+                        Land Travel
+                    </a>
+                  </li>
+                  <li class="mr-3">
+                    <a class="flex items-center justify-center px-4 py-2 font-bold no-underline hover:bg-gray-200 rounded-xl hover:text-black hover:bg-opacity-60 toggleColour" href="#">
+                        <svg class="w-8 h-8 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2" />  <circle cx="12" cy="6" r="3" /></svg>
+                        Sea Travel
+                    </a>
+                  </li>
+                  <li class="mr-3">
+                    <a class="flex items-center justify-center px-4 py-2 font-bold no-underline hover:bg-gray-200 rounded-xl hover:text-black hover:bg-opacity-60 toggleColour" href="#">
+                        <svg class="w-8 h-8 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="3" y="5" width="18" height="14" rx="2" />  <polyline points="3 7 12 13 21 7" /></svg>                        
+                        Contact Us
+                    </a>
+                  </li>
               </ul>
               <button
-                id="navAction"
-                class="px-8 py-4 mx-auto mt-4 font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow opacity-75 lg:mx-0 hover:underline lg:mt-0 focus:outline-none focus:shadow-outline hover:scale-105"
-              >
-                Action
+                id="navAction">
+        
               </button>
             </div>
           </div>
@@ -107,72 +120,63 @@
             <a  href="#travelTypes"  class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
               Transportaion Types
             </a>
-            <div class="w-full mb-4">
-              <div class="w-64 h-1 py-0 mx-auto my-0 rounded-t opacity-25 gradient"></div>
-            </div>
+
             <div class="flex flex-col flex-grow flex-shrink w-full p-6 md:w-1/3">
-              <div class="flex-1 overflow-hidden bg-white rounded-t rounded-b-none shadow">
-                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                  <p class="w-full px-6 text-xs text-gray-600 md:text-sm">
-                    xGETTING STARTED
-                  </p>
-                  <div class="w-full px-6 text-xl font-bold text-gray-800">
-                    Lorem ipsum dolor sit amet.
-                  </div>
-                  <p class="px-6 mb-5 text-base text-gray-800">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                  </p>
-                </a>
-              </div>
-              <div class="flex-none p-6 mt-auto overflow-hidden bg-white rounded-t-none rounded-b shadow">
-                <div class="flex items-center justify-start">
-                  <button class="px-8 py-4 mx-auto my-6 font-bold text-white transition duration-300 ease-in-out transform rounded-full shadow-lg lg:mx-0 hover:underline gradient focus:outline-none focus:shadow-outline hover:scale-105">
-                    Action
-                  </button>
+                <div class="flex-1 overflow-hidden bg-white rounded-t rounded-b-none shadow">
+                  <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <div class="flex items-center w-full px-6 py-2 text-2xl font-bold text-gray-800">
+                        <svg class="w-8 h-8 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2-4l-2 -4h3l2 2h4l-2 -7h3z" /></svg>
+                        Air Travel
+                    </div>
+                    <p class="px-6 mb-5 text-base text-gray-800">
+                      travel across the countries on a fast and reliable way ,
+                      We support traveling from and to all countries .
+                    </p>
+                  </a>
+                  <div class="flex items-center justify-center">
+                      <button class="px-8 py-4 mx-auto my-6 font-bold text-white transition duration-300 ease-in-out transform rounded-full shadow-lg lg:mx-0 hover:underline gradient focus:outline-none focus:shadow-outline hover:scale-105">
+                        More
+                      </button>
+                    </div>
                 </div>
               </div>
-            </div>
-            <div class="flex flex-col flex-grow flex-shrink w-full p-6 md:w-1/3">
-              <div class="flex-1 overflow-hidden bg-white rounded-t rounded-b-none shadow">
-                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                  <p class="w-full px-6 text-xs text-gray-600 md:text-sm">
-                    xGETTING STARTED
-                  </p>
-                  <div class="w-full px-6 text-xl font-bold text-gray-800">
-                    Lorem ipsum dolor sit amet.
-                  </div>
-                  <p class="px-6 mb-5 text-base text-gray-800">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                  </p>
-                </a>
-              </div>
-              <div class="flex-none p-6 mt-auto overflow-hidden bg-white rounded-t-none rounded-b shadow">
-                <div class="flex items-center justify-center">
-                  <button class="px-8 py-4 mx-auto my-6 font-bold text-white transition duration-300 ease-in-out transform rounded-full shadow-lg lg:mx-0 hover:underline gradient focus:outline-none focus:shadow-outline hover:scale-105">
-                    Action
-                  </button>
+              <div class="flex flex-col flex-grow flex-shrink w-full p-6 md:w-1/3">
+                <div class="flex-1 overflow-hidden bg-white rounded-t rounded-b-none shadow">
+                  <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <div class="flex items-center w-full px-6 py-2 text-2xl font-bold text-gray-800">
+                        <svg class="w-8 h-8 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="7" cy="17" r="2" />  <circle cx="17" cy="17" r="2" />  <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" /></svg>
+                        Land Travel
+                    </div>
+                    <p class="px-6 mb-5 text-base text-gray-800">
+                      travel the lands of africa and see the beauty of the african land. 
+                    </p>
+                  </a>
+                  <div class="flex items-center justify-center">
+                      <button class="px-8 py-4 mx-auto my-6 font-bold text-white transition duration-300 ease-in-out transform rounded-full shadow-lg lg:mx-0 hover:underline gradient focus:outline-none focus:shadow-outline hover:scale-105">
+                        More
+                      </button>
+                    </div>
                 </div>
               </div>
-            </div>
-            <div class="flex flex-col flex-grow flex-shrink w-full p-6 md:w-1/3">
-              <div class="flex-1 overflow-hidden bg-white rounded-t rounded-b-none shadow">
-                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-                  <div class="w-full px-6 text-xl font-bold text-gray-800">
-                    Lorem ipsum dolor sit amet.
-                  </div>
-                  <p class="px-6 mb-5 text-base text-gray-800">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-                  </p>
-                </a>
-              </div>
-              <div class="flex-none p-6 mt-auto overflow-hidden bg-white rounded-t-none rounded-b shadow">
-                <div class="flex items-center justify-end">
-                  <button class="px-8 py-4 mx-auto my-6 font-bold text-white transition duration-300 ease-in-out transform rounded-full shadow-lg lg:mx-0 hover:underline gradient focus:outline-none focus:shadow-outline hover:scale-105">
-                    Action
-                  </button>
+              <div class="flex flex-col flex-grow flex-shrink w-full p-6 md:w-1/3">
+                <div class="flex-1 overflow-hidden bg-white rounded-t rounded-b-none shadow">
+                  <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <div class="flex items-center w-full px-6 py-2 text-2xl font-bold text-gray-800">
+                        <svg class="w-8 h-8 mr-2"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M12 9v12m-8 -8a8 8 0 0 0 16 0m1 0h-2m-14 0h-2" />  <circle cx="12" cy="6" r="3" /></svg>
+                        Sea Travel
+                    </div>
+                    <p class="px-6 mb-5 text-base text-gray-800">
+                        travel the to any continent while having a joyfull trip across the sea's . 
+
+                    </p>
+                  </a>
+                  <div class="flex items-center justify-center">
+                      <button class="px-8 py-4 mx-auto my-6 font-bold text-white transition duration-300 ease-in-out transform rounded-full shadow-lg lg:mx-0 hover:underline gradient focus:outline-none focus:shadow-outline hover:scale-105">
+                        Action
+                      </button>
+                    </div>
                 </div>
               </div>
-            </div>
           </div>
         </section>
 

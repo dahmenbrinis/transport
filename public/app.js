@@ -1,4 +1,3 @@
-
 var scrollpos = window.scrollY;
 var header = document.getElementById("header");
 var navcontent = document.getElementById("nav-content");
@@ -58,8 +57,12 @@ function check(e) {
       // click on the link
       if (navMenuDiv.classList.contains("hidden")) {
         navMenuDiv.classList.remove("hidden");
+        navMenuDiv.classList.remove("text-white");
+        navMenuDiv.classList.add("text-black");
       } else {
         navMenuDiv.classList.add("hidden");
+        navMenuDiv.classList.add("text-white");
+        navMenuDiv.classList.remove("text-black");
       }
     } else {
       // click both outside link and outside menu, hide menu
