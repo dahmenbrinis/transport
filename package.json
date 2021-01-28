@@ -4,7 +4,7 @@
   "description": "A starter template for very simple and small projects or static web pages with Tailwind CSS setup and configured without PostCSS or any other framework. You only need to install NPM.",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss build ./src/styles.css -o ./public/styles.css",
+    "build": "tailwindcss build ./src/styles.css -o ./public/src/styles.css",
     "prod": "NODE_ENV=production tailwindcss build ./src/styles.css -o ./public/styles.css",
     "onchange":"onchange './src/*.css' -- npm run build"
   },
