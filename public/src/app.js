@@ -82,14 +82,17 @@ function checkParent(t, elm) {
 
 
 function sendEmail() {
+  var name = document.getElementById('user').value ; 
+  var title = document.getElementById('title').value ; 
+  var body = document.getElementById('body').innerHTML ; 
 	Email.send({
-	Host: "smtp.gmail.com",
-	Username : "<sender’s email address>",
-	Password : "<email password>",
-	To : '<recipient’s email address>',
-	From : "<sender’s email address>",
-	Subject : "<email subject>",
-	Body : "<email body>",
+	Host: "smtp.mailtrap.io:2525",
+	Username : "5e7471ba13ef60",
+	Password : "9c85c9e016acbc",
+	To : 'dahmenhacker12@gmail.com',
+	From : "5e7471ba13ef60",
+	Subject : name+title,
+	Body : body,
 	}).then(
 		message => alert("mail sent successfully")
 	);
