@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 .gradient {
-    @apply bg-gradient-to-r from-indigo-600 to-purple-600;
+    @apply bg-gradient-to-r from-indigo-800 to-purple-600;
     
 }
 @tailwind utilities;

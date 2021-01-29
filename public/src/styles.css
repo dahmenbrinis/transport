@@ -582,8 +582,8 @@ video {
 
 .gradient {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  --tw-gradient-from: #4f46e5;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(79, 70, 229, 0));
+  --tw-gradient-from: #3730a3;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(55, 48, 163, 0));
   --tw-gradient-to: #7c3aed;
 }
 
@@ -31149,6 +31149,16 @@ video {
   }
 }
 
+.animate-0 {
+  -webkit-animation: hover;
+          animation: hover;
+}
+
+.animate-1 {
+  -webkit-animation: focus;
+          animation: focus;
+}
+
 .animate-none {
   -webkit-animation: none;
           animation: none;
@@ -61690,6 +61700,16 @@ video {
 
   .sm\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .sm\:animate-0 {
+    -webkit-animation: hover;
+            animation: hover;
+  }
+
+  .sm\:animate-1 {
+    -webkit-animation: focus;
+            animation: focus;
   }
 
   .sm\:animate-none {
@@ -92236,6 +92256,16 @@ video {
     transition-delay: 1000ms;
   }
 
+  .md\:animate-0 {
+    -webkit-animation: hover;
+            animation: hover;
+  }
+
+  .md\:animate-1 {
+    -webkit-animation: focus;
+            animation: focus;
+  }
+
   .md\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -122778,6 +122808,16 @@ video {
 
   .lg\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .lg\:animate-0 {
+    -webkit-animation: hover;
+            animation: hover;
+  }
+
+  .lg\:animate-1 {
+    -webkit-animation: focus;
+            animation: focus;
   }
 
   .lg\:animate-none {
@@ -153324,6 +153364,16 @@ video {
     transition-delay: 1000ms;
   }
 
+  .xl\:animate-0 {
+    -webkit-animation: hover;
+            animation: hover;
+  }
+
+  .xl\:animate-1 {
+    -webkit-animation: focus;
+            animation: focus;
+  }
+
   .xl\:animate-none {
     -webkit-animation: none;
             animation: none;
@@ -183866,6 +183916,16 @@ video {
 
   .\32xl\:delay-1000 {
     transition-delay: 1000ms;
+  }
+
+  .\32xl\:animate-0 {
+    -webkit-animation: hover;
+            animation: hover;
+  }
+
+  .\32xl\:animate-1 {
+    -webkit-animation: focus;
+            animation: focus;
   }
 
   .\32xl\:animate-none {
